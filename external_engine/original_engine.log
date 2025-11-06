@@ -1,0 +1,356 @@
+2025-10-16 18:45:04,654 - INFO - Using CUDA device
+2025-10-16 18:45:04,655 - INFO - Processing video (OPTIMIZED): d:\cinesculpt\wasim\TML_305\depth_output\TML305_021_010\TML305_021_010_FTG01_proxy_v001_src.mov
+2025-10-16 18:45:04,655 - INFO - Output directory: d:/cinesculpt/wasim/TML_305/depth_output/TML305_021_010/depth_exr
+2025-10-16 18:45:04,656 - INFO - Frame range: 1 to 265
+2025-10-16 18:45:04,656 - INFO - Using encoder: vitl
+2025-10-16 18:45:04,668 - INFO - using MLP layer as FFN
+2025-10-16 18:45:10,713 - ERROR - OPTIMIZED Processing failed: [Errno 2] No such file or directory: 'external_engine/models/video_depth_anything_vitl.pth'
+2025-10-16 18:45:10,722 - INFO - Using CUDA device
+2025-10-16 18:45:10,723 - INFO - Processing video (OPTIMIZED): d:\cinesculpt\wasim\TML_305\depth_output\TML305_021_020\TML305_021_020_FTG01_proxy_v001_src.mov
+2025-10-16 18:45:10,724 - INFO - Output directory: d:/cinesculpt/wasim/TML_305/depth_output/TML305_021_020/depth_exr
+2025-10-16 18:45:10,724 - INFO - Frame range: 1 to 68
+2025-10-16 18:45:10,725 - INFO - Using encoder: vits
+2025-10-16 18:45:10,727 - INFO - using MLP layer as FFN
+2025-10-16 18:45:11,215 - ERROR - OPTIMIZED Processing failed: [Errno 2] No such file or directory: 'external_engine/models/video_depth_anything_vits.pth'
+2025-10-16 18:45:29,136 - INFO - Using CUDA device
+2025-10-16 18:45:29,138 - INFO - Processing video (OPTIMIZED): d:\cinesculpt\wasim\TML_305\depth_output\TML305_021_010\TML305_021_010_FTG01_proxy_v001_src.mov
+2025-10-16 18:45:29,138 - INFO - Output directory: d:/cinesculpt/wasim/TML_305/depth_output/TML305_021_010/depth_exr
+2025-10-16 18:45:29,139 - INFO - Frame range: 1 to 265
+2025-10-16 18:45:29,139 - INFO - Using encoder: vitl
+2025-10-16 18:45:29,155 - INFO - using MLP layer as FFN
+2025-10-16 18:45:35,263 - ERROR - OPTIMIZED Processing failed: [Errno 2] No such file or directory: 'D:\\dev\\nuke\\ai\\Video-Depth-Anything\\VideoDepthAnything_Portable\\external_engine\\external_engine\\models\\video_depth_anything_vitl.pth'
+2025-10-16 18:45:35,268 - INFO - Using CUDA device
+2025-10-16 18:45:35,270 - INFO - Processing video (OPTIMIZED): d:\cinesculpt\wasim\TML_305\depth_output\TML305_021_020\TML305_021_020_FTG01_proxy_v001_src.mov
+2025-10-16 18:45:35,270 - INFO - Output directory: d:/cinesculpt/wasim/TML_305/depth_output/TML305_021_020/depth_exr
+2025-10-16 18:45:35,270 - INFO - Frame range: 1 to 68
+2025-10-16 18:45:35,271 - INFO - Using encoder: vits
+2025-10-16 18:45:35,273 - INFO - using MLP layer as FFN
+2025-10-16 18:45:35,829 - ERROR - OPTIMIZED Processing failed: [Errno 2] No such file or directory: 'D:\\dev\\nuke\\ai\\Video-Depth-Anything\\VideoDepthAnything_Portable\\external_engine\\external_engine\\models\\video_depth_anything_vits.pth'
+2025-10-16 19:47:49,282 - INFO - Using CUDA device
+2025-10-16 19:47:49,284 - INFO - Processing video (OPTIMIZED): d:\cinesculpt\wasim\TML_305\depth_output\TML305_021_020\TML305_021_020_FTG01_proxy_v001_src.mov
+2025-10-16 19:47:49,284 - INFO - Output directory: d:/cinesculpt/wasim/TML_305/depth_output/TML305_021_020/depth_exr
+2025-10-16 19:47:49,284 - INFO - Frame range: 1 to 68
+2025-10-16 19:47:49,284 - INFO - Using encoder: vits
+2025-10-16 19:47:49,296 - INFO - using MLP layer as FFN
+2025-10-16 19:47:57,198 - INFO - Loaded 68 frames at original resolution
+2025-10-16 19:48:43,374 - INFO - Processing completed: 68 depth maps generated
+2025-10-16 19:49:22,490 - INFO - Processing completed successfully: d:\cinesculpt\wasim\TML_305\depth_output\TML305_021_020\depth_exr
+2025-10-16 19:49:22,491 - INFO - Creating MP4 files in: d:/cinesculpt/wasim/TML_305/depth_output/TML305_021_020\depth_mp4
+2025-10-16 19:49:22,491 - ERROR - Failed to create MP4 files: name 'job_data' is not defined
+2025-10-16 19:53:16,858 - INFO - Using CUDA device
+2025-10-16 19:53:16,859 - INFO - Processing video (OPTIMIZED): d:\cinesculpt\wasim\TML_305\depth_output\TML305_021_020\TML305_021_020_FTG01_proxy_v001_src.mov
+2025-10-16 19:53:16,860 - INFO - Output directory: d:/cinesculpt/wasim/TML_305/depth_output/TML305_021_020/depth_exr
+2025-10-16 19:53:16,860 - INFO - Frame range: 1 to 68
+2025-10-16 19:53:16,860 - INFO - Using encoder: vits
+2025-10-16 19:53:16,869 - INFO - using MLP layer as FFN
+2025-10-16 19:53:17,433 - ERROR - OPTIMIZED Processing failed: [Errno 2] No such file or directory: 'external_engine/models/video_depth_anything_vits.pth'
+2025-10-16 19:53:30,231 - INFO - Using CUDA device
+2025-10-16 19:53:30,233 - INFO - Processing video (OPTIMIZED): d:\cinesculpt\wasim\TML_305\depth_output\TML305_021_020\TML305_021_020_FTG01_proxy_v001_src.mov
+2025-10-16 19:53:30,233 - INFO - Output directory: d:/cinesculpt/wasim/TML_305/depth_output/TML305_021_020/depth_exr
+2025-10-16 19:53:30,233 - INFO - Frame range: 1 to 68
+2025-10-16 19:53:30,233 - INFO - Using encoder: vits
+2025-10-16 19:53:30,243 - INFO - using MLP layer as FFN
+2025-10-16 19:53:30,870 - ERROR - OPTIMIZED Processing failed: [Errno 2] No such file or directory: 'external_engine/models/video_depth_anything_vits.pth'
+2025-10-16 23:33:09,140 - INFO - Using CUDA device
+2025-10-16 23:33:09,142 - INFO - Processing video: d:\cinesculpt\wasim\TML_305\depth_output\TML305_021_020_new\TML305_021_020_FTG01_proxy_v001_src.mov
+2025-10-16 23:33:09,142 - INFO - Output directory: d:/cinesculpt/wasim/TML_305/depth_output/TML305_021_020_new/depth_exr
+2025-10-16 23:33:09,143 - INFO - Frame range: 1 to 68
+2025-10-16 23:33:09,143 - INFO - Using encoder: vits
+2025-10-16 23:33:09,155 - INFO - using MLP layer as FFN
+2025-10-16 23:33:16,788 - INFO - Loaded 68 frames at original resolution
+2025-10-16 23:33:52,043 - INFO - Processing completed: 68 depth maps generated
+2025-10-16 23:38:08,751 - INFO - Using CUDA device
+2025-10-16 23:38:08,753 - INFO - Processing video: d:\cinesculpt\wasim\TML_305\depth_output\TML305_021_020_new\TML305_021_020_FTG01_proxy_v001_src.mov
+2025-10-16 23:38:08,753 - INFO - Output directory: d:/cinesculpt/wasim/TML_305/depth_output/TML305_021_020_new/depth_exr
+2025-10-16 23:38:08,754 - INFO - Frame range: 1 to 68
+2025-10-16 23:38:08,754 - INFO - Using encoder: vits
+2025-10-16 23:38:08,766 - INFO - using MLP layer as FFN
+2025-10-16 23:38:17,116 - INFO - Loaded 68 frames at original resolution
+2025-10-16 23:38:52,282 - INFO - Processing completed: 68 depth maps generated
+2025-10-16 23:41:20,337 - INFO - Using CUDA device
+2025-10-16 23:41:20,337 - INFO - Processing video: d:\cinesculpt\wasim\TML_305\depth_output\TML305_021_020_new\TML305_021_020_FTG01_proxy_v001_src.mov
+2025-10-16 23:41:20,338 - INFO - Output directory: d:\cinesculpt\wasim\TML_305\depth_output\TML305_021_020_new\depth_exr
+2025-10-16 23:41:20,338 - INFO - Frame range: 1 to 68
+2025-10-16 23:41:20,338 - INFO - Using encoder: vits
+2025-10-16 23:41:20,348 - INFO - using MLP layer as FFN
+2025-10-16 23:41:28,277 - INFO - Loaded 68 frames at original resolution
+2025-10-16 23:42:03,659 - INFO - Processing completed: 68 depth maps generated
+2025-10-16 23:42:05,338 - INFO - Using CUDA device
+2025-10-16 23:42:05,338 - INFO - Processing video: d:\cinesculpt\wasim\TML_305\depth_output\TML305_021_020_new\TML305_021_020_FTG01_proxy_v001_src.mov
+2025-10-16 23:42:05,339 - INFO - Output directory: d:\cinesculpt\wasim\TML_305\depth_output\TML305_021_020_new\depth_exr
+2025-10-16 23:42:05,339 - INFO - Frame range: 1 to 68
+2025-10-16 23:42:05,339 - INFO - Using encoder: vits
+2025-10-16 23:42:05,348 - INFO - using MLP layer as FFN
+2025-10-16 23:42:13,361 - INFO - Loaded 68 frames at original resolution
+2025-10-16 23:42:46,914 - INFO - Processing completed successfully: d:\cinesculpt\wasim\TML_305\depth_output\TML305_021_020_new\depth_exr
+2025-10-16 23:42:50,191 - INFO - Processing completed: 68 depth maps generated
+2025-10-16 23:43:32,205 - INFO - Processing completed successfully: d:\cinesculpt\wasim\TML_305\depth_output\TML305_021_020_new\depth_exr
+2025-11-04 14:21:57,167 - INFO - Using CUDA device
+2025-11-04 14:21:57,167 - INFO - Processing video: F:\cst\wasim\TML\306\plates\TML306_007_010\plates\jpg\TML306_007_010_FTG01_proxy_v001.%04d.jpg
+2025-11-04 14:21:57,167 - INFO - Output directory: F:/cst/wasim/TML/306/depth_output/TML306_007_010/depth_exr
+2025-11-04 14:21:57,167 - INFO - Frame range: 1001 to 1060
+2025-11-04 14:21:57,168 - INFO - Using encoder: vitl
+2025-11-04 14:21:57,182 - INFO - using MLP layer as FFN
+2025-11-04 14:22:12,729 - INFO - Loaded 60 frames at original resolution
+2025-11-04 15:03:23,953 - INFO - Using CUDA device
+2025-11-04 15:03:23,953 - INFO - Processing video: F:\cst\wasim\TML\306\plates\TML306_029_030\plates\jpg\TML306_029_030_FTG01_proxy_v002.%04d.jpg
+2025-11-04 15:03:23,954 - INFO - Output directory: F:/cst/wasim/TML/306/depth_output/TML306_029_030/depth_exr
+2025-11-04 15:03:23,954 - INFO - Frame range: 1001 to 1062
+2025-11-04 15:03:23,954 - INFO - Using encoder: vitl
+2025-11-04 15:03:23,968 - INFO - using MLP layer as FFN
+2025-11-04 15:03:39,495 - INFO - Loaded 62 frames at original resolution
+2025-11-04 15:04:09,489 - INFO - Using CUDA device
+2025-11-04 15:04:09,489 - INFO - Processing video: F:\cst\wasim\TML\306\plates\TML306_024_145\plates\jpg\TML306_024_145_FTG01_proxy_v002.%04d.jpg
+2025-11-04 15:04:09,489 - INFO - Output directory: F:/cst/wasim/TML/306/depth_output/TML306_024_145/depth_exr
+2025-11-04 15:04:09,489 - INFO - Frame range: 1001 to 1054
+2025-11-04 15:04:09,490 - INFO - Using encoder: vitl
+2025-11-04 15:04:09,505 - INFO - using MLP layer as FFN
+2025-11-04 15:04:21,815 - INFO - Loaded 54 frames at original resolution
+2025-11-04 15:06:50,932 - INFO - Using CUDA device
+2025-11-04 15:06:50,933 - INFO - Processing video: F:\cst\wasim\TML\306\plates\TML306_029_040\plates\jpg\TML306_029_040_FTG01_proxy_v002.%04d.jpg
+2025-11-04 15:06:50,933 - INFO - Output directory: F:/cst/wasim/TML/306/depth_output/TML306_029_040/depth_exr
+2025-11-04 15:06:50,933 - INFO - Frame range: 1001 to 1102
+2025-11-04 15:06:50,933 - INFO - Using encoder: vitl
+2025-11-04 15:06:50,949 - INFO - using MLP layer as FFN
+2025-11-04 15:07:11,966 - INFO - Loaded 102 frames at original resolution
+2025-11-04 15:52:51,513 - INFO - Using CUDA device
+2025-11-04 15:52:51,514 - INFO - Processing video: F:\cst\wasim\TML\306\plates\TML306_024_050\plates\jpg\TML306_024_050_FTG01_proxy_v001.%04d.jpg
+2025-11-04 15:52:51,514 - INFO - Output directory: F:/cst/wasim/TML/306/depth_output/TML306_024_050/depth_exr
+2025-11-04 15:52:51,514 - INFO - Frame range: 1001 to 1092
+2025-11-04 15:52:51,514 - INFO - Using encoder: vitl
+2025-11-04 15:52:51,527 - INFO - using MLP layer as FFN
+2025-11-04 15:53:09,278 - INFO - Loaded 92 frames at original resolution
+2025-11-04 15:57:43,866 - INFO - Using CUDA device
+2025-11-04 15:57:43,866 - INFO - Processing video: F:\cst\wasim\TML\306\plates\TML306_007_010\plates\jpg\TML306_007_010_FTG01_proxy_v001.%04d.jpg
+2025-11-04 15:57:43,866 - INFO - Output directory: F:/cst/wasim/TML/306/depth_output/TML306_007_010/depth_exr
+2025-11-04 15:57:43,866 - INFO - Frame range: 1001 to 1060
+2025-11-04 15:57:43,866 - INFO - Using encoder: vitl
+2025-11-04 15:57:43,879 - INFO - using MLP layer as FFN
+2025-11-04 15:57:58,876 - INFO - Loaded 60 frames at original resolution
+2025-11-04 16:02:37,793 - INFO - Processing completed: 60 depth maps generated
+2025-11-04 16:03:59,682 - INFO - Processing completed successfully: F:\cst\wasim\TML\306\depth_output\TML306_007_010\depth_exr
+2025-11-04 16:04:44,725 - INFO - Using CUDA device
+2025-11-04 16:04:44,725 - INFO - Processing video: F:\cst\wasim\TML\306\plates\TML306_024_030\plates\jpg\TML306_024_030_FTG01_proxy_v001.%04d.jpg
+2025-11-04 16:04:44,726 - INFO - Output directory: F:/cst/wasim/TML/306/depth_output/TML306_024_030/depth_exr
+2025-11-04 16:04:44,726 - INFO - Frame range: 1001 to 1132
+2025-11-04 16:04:44,726 - INFO - Using encoder: vitl
+2025-11-04 16:04:44,741 - INFO - using MLP layer as FFN
+2025-11-04 16:05:08,316 - INFO - Loaded 132 frames at original resolution
+2025-11-04 16:16:27,590 - INFO - Processing completed: 132 depth maps generated
+2025-11-04 16:19:59,701 - INFO - Processing completed successfully: F:\cst\wasim\TML\306\depth_output\TML306_024_030\depth_exr
+2025-11-04 16:21:13,854 - INFO - Using CUDA device
+2025-11-04 16:21:13,855 - INFO - Processing video: F:\cst\wasim\TML\306\plates\TML306_024_050\plates\jpg\TML306_024_050_FTG01_proxy_v001.%04d.jpg
+2025-11-04 16:21:13,855 - INFO - Output directory: F:/cst/wasim/TML/306/depth_output/TML306_024_050/depth_exr
+2025-11-04 16:21:13,855 - INFO - Frame range: 1001 to 1092
+2025-11-04 16:21:13,855 - INFO - Using encoder: vitl
+2025-11-04 16:21:13,869 - INFO - using MLP layer as FFN
+2025-11-04 16:21:30,861 - INFO - Loaded 92 frames at original resolution
+2025-11-04 16:30:02,008 - INFO - Processing completed: 92 depth maps generated
+2025-11-04 16:32:42,064 - INFO - Processing completed successfully: F:\cst\wasim\TML\306\depth_output\TML306_024_050\depth_exr
+2025-11-04 16:33:40,215 - INFO - Using CUDA device
+2025-11-04 16:33:40,216 - INFO - Processing video: F:\cst\wasim\TML\306\plates\TML306_024_070\plates\jpg\TML306_024_070_FTG01_proxy_v001.%04d.jpg
+2025-11-04 16:33:40,216 - INFO - Output directory: F:/cst/wasim/TML/306/depth_output/TML306_024_070/depth_exr
+2025-11-04 16:33:40,216 - INFO - Frame range: 1001 to 1061
+2025-11-04 16:33:40,216 - INFO - Using encoder: vitl
+2025-11-04 16:33:40,232 - INFO - using MLP layer as FFN
+2025-11-04 16:33:53,041 - INFO - Loaded 61 frames at original resolution
+2025-11-04 16:38:16,551 - INFO - Processing completed: 61 depth maps generated
+2025-11-04 16:39:43,817 - INFO - Processing completed successfully: F:\cst\wasim\TML\306\depth_output\TML306_024_070\depth_exr
+2025-11-04 16:40:30,014 - INFO - Using CUDA device
+2025-11-04 16:40:30,014 - INFO - Processing video: F:\cst\wasim\TML\306\plates\TML306_024_090\plates\jpg\TML306_024_090_FTG01_proxy_v001.%04d.jpg
+2025-11-04 16:40:30,014 - INFO - Output directory: F:/cst/wasim/TML/306/depth_output/TML306_024_090/depth_exr
+2025-11-04 16:40:30,014 - INFO - Frame range: 1001 to 1040
+2025-11-04 16:40:30,014 - INFO - Using encoder: vitl
+2025-11-04 16:40:30,028 - INFO - using MLP layer as FFN
+2025-11-04 16:40:42,856 - INFO - Loaded 40 frames at original resolution
+2025-11-04 16:43:34,414 - INFO - Processing completed: 40 depth maps generated
+2025-11-04 16:44:30,020 - INFO - Processing completed successfully: F:\cst\wasim\TML\306\depth_output\TML306_024_090\depth_exr
+2025-11-04 16:45:06,881 - INFO - Using CUDA device
+2025-11-04 16:45:06,882 - INFO - Processing video: F:\cst\wasim\TML\306\plates\TML306_024_100\plates\jpg\TML306_024_100_FTG01_proxy_v001.%04d.jpg
+2025-11-04 16:45:06,882 - INFO - Output directory: F:/cst/wasim/TML/306/depth_output/TML306_024_100/depth_exr
+2025-11-04 16:45:06,882 - INFO - Frame range: 1001 to 1067
+2025-11-04 16:45:06,882 - INFO - Using encoder: vitl
+2025-11-04 16:45:06,897 - INFO - using MLP layer as FFN
+2025-11-04 16:45:21,978 - INFO - Loaded 67 frames at original resolution
+2025-11-04 16:50:22,563 - INFO - Processing completed: 67 depth maps generated
+2025-11-04 16:52:00,844 - INFO - Processing completed successfully: F:\cst\wasim\TML\306\depth_output\TML306_024_100\depth_exr
+2025-11-04 16:52:48,415 - INFO - Using CUDA device
+2025-11-04 16:52:48,415 - INFO - Processing video: F:\cst\wasim\TML\306\plates\TML306_024_110\plates\jpg\TML306_024_110_FTG01_proxy_v001.%04d.jpg
+2025-11-04 16:52:48,415 - INFO - Output directory: F:/cst/wasim/TML/306/depth_output/TML306_024_110/depth_exr
+2025-11-04 16:52:48,415 - INFO - Frame range: 1001 to 1108
+2025-11-04 16:52:48,415 - INFO - Using encoder: vitl
+2025-11-04 16:52:48,430 - INFO - using MLP layer as FFN
+2025-11-04 16:53:09,001 - INFO - Loaded 108 frames at original resolution
+2025-11-04 17:01:45,054 - INFO - Processing completed: 108 depth maps generated
+2025-11-04 17:04:53,606 - INFO - Processing completed successfully: F:\cst\wasim\TML\306\depth_output\TML306_024_110\depth_exr
+2025-11-04 17:05:58,871 - INFO - Using CUDA device
+2025-11-04 17:05:58,872 - INFO - Processing video: F:\cst\wasim\TML\306\plates\TML306_024_120\plates\jpg\TML306_024_120_FTG01_proxy_v001.%04d.jpg
+2025-11-04 17:05:58,872 - INFO - Output directory: F:/cst/wasim/TML/306/depth_output/TML306_024_120/depth_exr
+2025-11-04 17:05:58,872 - INFO - Frame range: 1001 to 1056
+2025-11-04 17:05:58,872 - INFO - Using encoder: vitl
+2025-11-04 17:05:58,887 - INFO - using MLP layer as FFN
+2025-11-04 17:06:11,764 - INFO - Loaded 56 frames at original resolution
+2025-11-04 17:10:40,297 - INFO - Processing completed: 56 depth maps generated
+2025-11-04 17:12:00,015 - INFO - Processing completed successfully: F:\cst\wasim\TML\306\depth_output\TML306_024_120\depth_exr
+2025-11-04 17:12:43,201 - INFO - Using CUDA device
+2025-11-04 17:12:43,201 - INFO - Processing video: F:\cst\wasim\TML\306\plates\TML306_024_130\plates\jpg\TML306_024_130_FTG01_proxy_v001.%04d.jpg
+2025-11-04 17:12:43,201 - INFO - Output directory: F:/cst/wasim/TML/306/depth_output/TML306_024_130/depth_exr
+2025-11-04 17:12:43,201 - INFO - Frame range: 1001 to 1105
+2025-11-04 17:12:43,201 - INFO - Using encoder: vitl
+2025-11-04 17:12:43,217 - INFO - using MLP layer as FFN
+2025-11-04 17:13:05,557 - INFO - Loaded 105 frames at original resolution
+2025-11-04 17:22:49,732 - INFO - Processing completed: 105 depth maps generated
+2025-11-04 17:25:20,712 - INFO - Processing completed successfully: F:\cst\wasim\TML\306\depth_output\TML306_024_130\depth_exr
+2025-11-04 17:26:25,583 - INFO - Using CUDA device
+2025-11-04 17:26:25,583 - INFO - Processing video: F:\cst\wasim\TML\306\plates\TML306_024_145\plates\jpg\TML306_024_145_FTG01_proxy_v002.%04d.jpg
+2025-11-04 17:26:25,583 - INFO - Output directory: F:/cst/wasim/TML/306/depth_output/TML306_024_145/depth_exr
+2025-11-04 17:26:25,583 - INFO - Frame range: 1001 to 1054
+2025-11-04 17:26:25,583 - INFO - Using encoder: vitl
+2025-11-04 17:26:25,599 - INFO - using MLP layer as FFN
+2025-11-04 17:26:38,745 - INFO - Loaded 54 frames at original resolution
+2025-11-04 17:31:15,166 - INFO - Processing completed: 54 depth maps generated
+2025-11-04 17:32:31,176 - INFO - Processing completed successfully: F:\cst\wasim\TML\306\depth_output\TML306_024_145\depth_exr
+2025-11-04 18:37:10,984 - INFO - Using CUDA device
+2025-11-04 18:37:10,984 - INFO - Processing video: F:\cst\wasim\TML\306\plates\TML306_024_150\plates\jpg\TML306_024_150_FTG01_proxy_v002.%04d.jpg
+2025-11-04 18:37:10,985 - INFO - Output directory: F:/cst/wasim/TML/306/depth_output/TML306_024_150/depth_exr
+2025-11-04 18:37:10,985 - INFO - Frame range: 1001 to 1065
+2025-11-04 18:37:10,985 - INFO - Using encoder: vitl
+2025-11-04 18:37:11,000 - INFO - using MLP layer as FFN
+2025-11-04 18:37:25,537 - INFO - Loaded 65 frames at original resolution
+2025-11-04 18:45:27,576 - INFO - Processing completed: 65 depth maps generated
+2025-11-04 18:47:24,887 - INFO - Processing completed successfully: F:\cst\wasim\TML\306\depth_output\TML306_024_150\depth_exr
+2025-11-04 18:48:12,477 - INFO - Using CUDA device
+2025-11-04 18:48:12,478 - INFO - Processing video: F:\cst\wasim\TML\306\plates\TML306_026_020\plates\jpg\TML306_026_020_FTG01_proxy_v001.%04d.jpg
+2025-11-04 18:48:12,478 - INFO - Output directory: F:/cst/wasim/TML/306/depth_output/TML306_026_020/depth_exr
+2025-11-04 18:48:12,478 - INFO - Frame range: 1001 to 1047
+2025-11-04 18:48:12,478 - INFO - Using encoder: vitl
+2025-11-04 18:48:12,492 - INFO - using MLP layer as FFN
+2025-11-04 18:48:24,711 - INFO - Loaded 47 frames at original resolution
+2025-11-04 18:56:39,144 - INFO - Processing completed: 47 depth maps generated
+2025-11-04 18:57:47,886 - INFO - Processing completed successfully: F:\cst\wasim\TML\306\depth_output\TML306_026_020\depth_exr
+2025-11-04 18:58:27,367 - INFO - Using CUDA device
+2025-11-04 18:58:27,368 - INFO - Processing video: F:\cst\wasim\TML\306\plates\TML306_026_060\plates\jpg\TML306_026_060_FTG01_proxy_v001.%04d.jpg
+2025-11-04 18:58:27,368 - INFO - Output directory: F:/cst/wasim/TML/306/depth_output/TML306_026_060/depth_exr
+2025-11-04 18:58:27,368 - INFO - Frame range: 1001 to 1049
+2025-11-04 18:58:27,368 - INFO - Using encoder: vitl
+2025-11-04 18:58:27,384 - INFO - using MLP layer as FFN
+2025-11-04 18:58:39,394 - INFO - Loaded 49 frames at original resolution
+2025-11-04 19:01:50,042 - INFO - Processing completed: 49 depth maps generated
+2025-11-04 19:03:01,191 - INFO - Processing completed successfully: F:\cst\wasim\TML\306\depth_output\TML306_026_060\depth_exr
+2025-11-04 19:03:43,854 - INFO - Using CUDA device
+2025-11-04 19:03:43,855 - INFO - Processing video: F:\cst\wasim\TML\306\plates\TML306_026_080\plates\jpg\TML306_026_080_FTG01_proxy_v001.%04d.jpg
+2025-11-04 19:03:43,855 - INFO - Output directory: F:/cst/wasim/TML/306/depth_output/TML306_026_080/depth_exr
+2025-11-04 19:03:43,855 - INFO - Frame range: 1001 to 1067
+2025-11-04 19:03:43,855 - INFO - Using encoder: vitl
+2025-11-04 19:03:43,871 - INFO - using MLP layer as FFN
+2025-11-04 19:03:59,411 - INFO - Loaded 67 frames at original resolution
+2025-11-04 19:10:50,456 - INFO - Processing completed: 67 depth maps generated
+2025-11-04 19:12:29,375 - INFO - Processing completed successfully: F:\cst\wasim\TML\306\depth_output\TML306_026_080\depth_exr
+2025-11-04 19:13:17,609 - INFO - Using CUDA device
+2025-11-04 19:13:17,609 - INFO - Processing video: F:\cst\wasim\TML\306\plates\TML306_026_100\plates\jpg\TML306_026_100_FTG01_proxy_v001.%04d.jpg
+2025-11-04 19:13:17,609 - INFO - Output directory: F:/cst/wasim/TML/306/depth_output/TML306_026_100/depth_exr
+2025-11-04 19:13:17,609 - INFO - Frame range: 1001 to 1105
+2025-11-04 19:13:17,609 - INFO - Using encoder: vitl
+2025-11-04 19:13:17,623 - INFO - using MLP layer as FFN
+2025-11-04 19:13:36,641 - INFO - Loaded 105 frames at original resolution
+2025-11-04 19:22:20,785 - INFO - Processing completed: 105 depth maps generated
+2025-11-04 19:24:48,390 - INFO - Processing completed successfully: F:\cst\wasim\TML\306\depth_output\TML306_026_100\depth_exr
+2025-11-04 19:25:51,794 - INFO - Using CUDA device
+2025-11-04 19:25:51,794 - INFO - Processing video: F:\cst\wasim\TML\306\plates\TML306_026_120\plates\jpg\TML306_026_120_FTG01_proxy_v001.%04d.jpg
+2025-11-04 19:25:51,794 - INFO - Output directory: F:/cst/wasim/TML/306/depth_output/TML306_026_120/depth_exr
+2025-11-04 19:25:51,794 - INFO - Frame range: 1001 to 1100
+2025-11-04 19:25:51,795 - INFO - Using encoder: vitl
+2025-11-04 19:25:51,811 - INFO - using MLP layer as FFN
+2025-11-04 19:26:10,284 - INFO - Loaded 100 frames at original resolution
+2025-11-04 19:34:41,619 - INFO - Processing completed: 100 depth maps generated
+2025-11-04 19:37:06,859 - INFO - Processing completed successfully: F:\cst\wasim\TML\306\depth_output\TML306_026_120\depth_exr
+2025-11-04 19:38:10,223 - INFO - Using CUDA device
+2025-11-04 19:38:10,223 - INFO - Processing video: F:\cst\wasim\TML\306\plates\TML306_026_130\plates\jpg\TML306_026_130_FTG01_proxy_v001.%04d.jpg
+2025-11-04 19:38:10,223 - INFO - Output directory: F:/cst/wasim/TML/306/depth_output/TML306_026_130/depth_exr
+2025-11-04 19:38:10,223 - INFO - Frame range: 1001 to 1061
+2025-11-04 19:38:10,223 - INFO - Using encoder: vitl
+2025-11-04 19:38:10,237 - INFO - using MLP layer as FFN
+2025-11-04 19:38:23,998 - INFO - Loaded 61 frames at original resolution
+2025-11-04 19:41:40,943 - INFO - Processing completed: 61 depth maps generated
+2025-11-04 19:43:13,375 - INFO - Processing completed successfully: F:\cst\wasim\TML\306\depth_output\TML306_026_130\depth_exr
+2025-11-04 19:43:59,491 - INFO - Using CUDA device
+2025-11-04 19:43:59,491 - INFO - Processing video: F:\cst\wasim\TML\306\plates\TML306_026_140\plates\jpg\TML306_026_140_FTG01_proxy_v001.%04d.jpg
+2025-11-04 19:43:59,491 - INFO - Output directory: F:/cst/wasim/TML/306/depth_output/TML306_026_140/depth_exr
+2025-11-04 19:43:59,491 - INFO - Frame range: 1001 to 1066
+2025-11-04 19:43:59,492 - INFO - Using encoder: vitl
+2025-11-04 19:43:59,505 - INFO - using MLP layer as FFN
+2025-11-04 19:44:13,713 - INFO - Loaded 66 frames at original resolution
+2025-11-04 19:47:33,117 - INFO - Processing completed: 66 depth maps generated
+2025-11-04 19:49:07,677 - INFO - Processing completed successfully: F:\cst\wasim\TML\306\depth_output\TML306_026_140\depth_exr
+2025-11-04 19:49:55,870 - INFO - Using CUDA device
+2025-11-04 19:49:55,870 - INFO - Processing video: F:\cst\wasim\TML\306\plates\TML306_026_170\plates\jpg\TML306_026_170_FTG01_proxy_v001.%04d.jpg
+2025-11-04 19:49:55,870 - INFO - Output directory: F:/cst/wasim/TML/306/depth_output/TML306_026_170/depth_exr
+2025-11-04 19:49:55,871 - INFO - Frame range: 1001 to 1068
+2025-11-04 19:49:55,871 - INFO - Using encoder: vitl
+2025-11-04 19:49:55,884 - INFO - using MLP layer as FFN
+2025-11-04 19:50:11,020 - INFO - Loaded 68 frames at original resolution
+2025-11-04 19:55:51,329 - INFO - Processing completed: 68 depth maps generated
+2025-11-04 19:57:26,123 - INFO - Processing completed successfully: F:\cst\wasim\TML\306\depth_output\TML306_026_170\depth_exr
+2025-11-04 19:58:14,070 - INFO - Using CUDA device
+2025-11-04 19:58:14,071 - INFO - Processing video: F:\cst\wasim\TML\306\plates\TML306_029_020\plates\jpg\TML306_029_020_FTG01_proxy_v002.%04d.jpg
+2025-11-04 19:58:14,071 - INFO - Output directory: F:/cst/wasim/TML/306/depth_output/TML306_029_020/depth_exr
+2025-11-04 19:58:14,071 - INFO - Frame range: 1001 to 1183
+2025-11-04 19:58:14,071 - INFO - Using encoder: vitl
+2025-11-04 19:58:14,080 - INFO - using MLP layer as FFN
+2025-11-04 19:58:50,421 - INFO - Loaded 183 frames at original resolution
+2025-11-04 20:17:24,671 - INFO - Processing completed: 183 depth maps generated
+2025-11-04 20:21:45,482 - INFO - Processing completed successfully: F:\cst\wasim\TML\306\depth_output\TML306_029_020\depth_exr
+2025-11-04 20:23:19,707 - INFO - Using CUDA device
+2025-11-04 20:23:19,707 - INFO - Processing video: F:\cst\wasim\TML\306\plates\TML306_029_030\plates\jpg\TML306_029_030_FTG01_proxy_v002.%04d.jpg
+2025-11-04 20:23:19,708 - INFO - Output directory: F:/cst/wasim/TML/306/depth_output/TML306_029_030/depth_exr
+2025-11-04 20:23:19,708 - INFO - Frame range: 1001 to 1062
+2025-11-04 20:23:19,708 - INFO - Using encoder: vitl
+2025-11-04 20:23:19,721 - INFO - using MLP layer as FFN
+2025-11-04 20:23:35,005 - INFO - Loaded 62 frames at original resolution
+2025-11-04 20:26:23,522 - INFO - Processing completed: 62 depth maps generated
+2025-11-04 20:27:53,787 - INFO - Processing completed successfully: F:\cst\wasim\TML\306\depth_output\TML306_029_030\depth_exr
+2025-11-04 20:28:41,286 - INFO - Using CUDA device
+2025-11-04 20:28:41,287 - INFO - Processing video: F:\cst\wasim\TML\306\plates\TML306_029_040\plates\jpg\TML306_029_040_FTG01_proxy_v002.%04d.jpg
+2025-11-04 20:28:41,287 - INFO - Output directory: F:/cst/wasim/TML/306/depth_output/TML306_029_040/depth_exr
+2025-11-04 20:28:41,287 - INFO - Frame range: 1001 to 1102
+2025-11-04 20:28:41,287 - INFO - Using encoder: vitl
+2025-11-04 20:28:41,300 - INFO - using MLP layer as FFN
+2025-11-04 20:29:01,793 - INFO - Loaded 102 frames at original resolution
+2025-11-04 20:38:41,757 - INFO - Processing completed: 102 depth maps generated
+2025-11-04 20:41:07,561 - INFO - Processing completed successfully: F:\cst\wasim\TML\306\depth_output\TML306_029_040\depth_exr
+2025-11-04 20:42:09,855 - INFO - Using CUDA device
+2025-11-04 20:42:09,855 - INFO - Processing video: F:\cst\wasim\TML\306\plates\TML306_029_050\plates\jpg\TML306_029_050_FTG01_proxy_v002.%04d.jpg
+2025-11-04 20:42:09,855 - INFO - Output directory: F:/cst/wasim/TML/306/depth_output/TML306_029_050/depth_exr
+2025-11-04 20:42:09,855 - INFO - Frame range: 1001 to 1263
+2025-11-04 20:42:09,856 - INFO - Using encoder: vitl
+2025-11-04 20:42:09,870 - INFO - using MLP layer as FFN
+2025-11-04 20:42:48,565 - INFO - Loaded 263 frames at original resolution
+2025-11-04 21:08:14,835 - INFO - Processing completed: 263 depth maps generated
+2025-11-04 21:14:26,562 - INFO - Processing completed successfully: F:\cst\wasim\TML\306\depth_output\TML306_029_050\depth_exr
+2025-11-04 21:16:26,515 - INFO - Using CUDA device
+2025-11-04 21:16:26,515 - INFO - Processing video: F:\cst\wasim\TML\306\plates\TML306_029_100\plates\jpg\TML306_029_100_FTG01_proxy_v002.%04d.jpg
+2025-11-04 21:16:26,515 - INFO - Output directory: F:/cst/wasim/TML/306/depth_output/TML306_029_100/depth_exr
+2025-11-04 21:16:26,515 - INFO - Frame range: 1001 to 1152
+2025-11-04 21:16:26,515 - INFO - Using encoder: vitl
+2025-11-04 21:16:26,528 - INFO - using MLP layer as FFN
+2025-11-04 21:16:58,645 - INFO - Loaded 152 frames at original resolution
+2025-11-04 21:31:00,793 - INFO - Processing completed: 152 depth maps generated
+2025-11-04 21:34:32,036 - INFO - Processing completed successfully: F:\cst\wasim\TML\306\depth_output\TML306_029_100\depth_exr
+2025-11-04 21:37:31,956 - INFO - Using CUDA device
+2025-11-04 21:37:31,956 - INFO - Processing video: F:\cst\wasim\TML\306\plates\TML306_026_120\plates\jpg\TML306_026_120_FTG01_proxy_v001.%04d.jpg
+2025-11-04 21:37:31,956 - INFO - Output directory: F:/cst/wasim/TML/306/depth_output/TML306_026_120/depth_exr
+2025-11-04 21:37:31,956 - INFO - Frame range: 1001 to 1100
+2025-11-04 21:37:31,956 - INFO - Using encoder: vitl
+2025-11-04 21:37:31,972 - INFO - using MLP layer as FFN
+2025-11-04 21:37:52,061 - INFO - Loaded 100 frames at original resolution
+2025-11-04 21:47:03,549 - INFO - Processing completed: 100 depth maps generated
+2025-11-04 21:49:27,390 - INFO - Processing completed successfully: F:\cst\wasim\TML\306\depth_output\TML306_026_120\depth_exr
+2025-11-04 21:50:25,294 - INFO - Using CUDA device
+2025-11-04 21:50:25,295 - INFO - Processing video: F:\cst\wasim\TML\306\plates\TML306_026_130\plates\jpg\TML306_026_130_FTG01_proxy_v001.%04d.jpg
+2025-11-04 21:50:25,295 - INFO - Output directory: F:/cst/wasim/TML/306/depth_output/TML306_026_130/depth_exr
+2025-11-04 21:50:25,295 - INFO - Frame range: 1001 to 1061
+2025-11-04 21:50:25,295 - INFO - Using encoder: vitl
+2025-11-04 21:50:25,309 - INFO - using MLP layer as FFN
+2025-11-04 21:50:39,257 - INFO - Loaded 61 frames at original resolution
+2025-11-04 21:55:36,948 - INFO - Processing completed: 61 depth maps generated
+2025-11-04 21:57:02,300 - INFO - Processing completed successfully: F:\cst\wasim\TML\306\depth_output\TML306_026_130\depth_exr
