@@ -437,7 +437,7 @@ class OriginalVideoDepthEngine:
             
             return {
                 "status": "success", 
-                "output_path": depth_exr_dir,
+                "output_path": exr_output_dir,  # Fixed: was depth_exr_dir (undefined)
                 "depth_frames": len(depths),
                 "fps": fps
             }
