@@ -6,3 +6,8 @@ __pycache__
 *.pyc
 gradio*
 models
+external_engine/models/
+*.pth
+*.pt
+*.ckpt
+*.safetensors
