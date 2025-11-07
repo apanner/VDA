@@ -178,33 +178,21 @@ class OriginalVideoDepthEngine:
             # Read frames - handle both video files and image sequences (including EXR)
             print(f"[LOADING] Using ORIGINAL method - no memory optimization")
             
-            # Check if input is EXR sequence and convert to ProRes if needed
+            # EXR to ProRes conversion is DISABLED - we use EXR to JPG conversion instead
+            # JPG conversion happens in Colab template before calling this engine
+            # So input should already be JPG/PNG or video file at this point
             temp_prores_file = None
             actual_input_video = input_video
             
-            print(f"[DEBUG] EXR_CONVERTER_AVAILABLE: {EXR_CONVERTER_AVAILABLE}")
             print(f"[DEBUG] Input video path: {input_video}")
             
+            # Check if input is EXR - if so, warn that it should have been converted to JPG first
             if EXR_CONVERTER_AVAILABLE:
                 is_exr = is_exr_sequence(input_video)
-                print(f"[DEBUG] is_exr_sequence result: {is_exr}")
-                
                 if is_exr:
-                    print(f"[EXR->ProRes] Detected EXR sequence input, converting to Apple ProRes...")
-                    temp_prores_file = convert_exr_to_prores_for_depth(
-                        input_video, first_frame, last_frame, target_fps if target_fps > 0 else 24.0
-                    )
-                    
-                    if temp_prores_file:
-                        actual_input_video = temp_prores_file
-                        print(f"[EXR->ProRes] Successfully converted EXR to ProRes: {temp_prores_file}")
-                    else:
-                        print(f"[ERROR] Failed to convert EXR sequence to ProRes")
-                        return {"status": "error", "message": "Failed to convert EXR sequence to ProRes"}
-                else:
-                    print(f"[DEBUG] Input is not an EXR sequence, proceeding with regular processing")
-            else:
-                print(f"[DEBUG] EXR converter not available, proceeding with regular processing")
+                    print(f"[WARN] EXR sequence detected but EXR->ProRes conversion is disabled.")
+                    print(f"[WARN] Expected input to be JPG/PNG (from EXR->JPG conversion) or video file.")
+                    print(f"[WARN] Proceeding with EXR input directly (may fail if model doesn't support EXR).")
             
             if actual_input_video.endswith(('.mp4', '.avi', '.mov', '.mkv')):
                 # Video file - use original method (now supports ProRes from EXR conversion)
