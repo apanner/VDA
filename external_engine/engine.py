@@ -200,14 +200,66 @@ class OriginalVideoDepthEngine:
             else:
                 # Image sequence - read frames manually (supports JPG, PNG, etc.)
                 import cv2
+                import re
                 frames = []
                 print(f"[DEBUG] Loading image sequence from {first_frame} to {last_frame}")
                 
+                # Detect frame number pattern and padding from input path
+                # Patterns: %05d, %04d, %03d, %02d, %d, ####, ###, ##, #
+                # Supports both underscore and dot separators: base_name_%04d.jpg or base_name.%04d.jpg
+                frame_pattern = None
+                frame_padding = 4  # default
+                
+                # Try to detect pattern from input path
+                pattern_match = re.search(r'%0?(\d+)d', actual_input_video)
+                if pattern_match:
+                    frame_padding = int(pattern_match.group(1))
+                    frame_pattern = f"%0{frame_padding}d"
+                elif '####' in actual_input_video:
+                    frame_padding = 4
+                    frame_pattern = '####'
+                elif '###' in actual_input_video:
+                    frame_padding = 3
+                    frame_pattern = '###'
+                elif '##' in actual_input_video:
+                    frame_padding = 2
+                    frame_pattern = '##'
+                elif '#' in actual_input_video:
+                    frame_padding = 1
+                    frame_pattern = '#'
+                elif '%d' in actual_input_video:
+                    frame_padding = 0  # No padding
+                    frame_pattern = '%d'
+                
+                print(f"[DEBUG] Detected frame pattern: {frame_pattern}, padding: {frame_padding}")
+                
                 for frame_num in range(first_frame, last_frame + 1):
-                    # Try multiple frame number formats
-                    frame_path = actual_input_video.replace("%04d", f"{frame_num:04d}")
-                    frame_path = frame_path.replace("####", f"{frame_num:04d}")
-                    frame_path = frame_path.replace("%d", f"{frame_num}")
+                    # Replace frame number pattern with properly formatted frame number
+                    # Use regex to handle replacement more precisely (handles both _ and . separators)
+                    if frame_pattern:
+                        if frame_pattern.startswith('%'):
+                            # Handle %05d, %04d, etc. - use regex to replace only the pattern, preserving separator
+                            # Pattern matches: base_name_%04d.jpg or base_name.%04d.jpg
+                            frame_path = re.sub(
+                                r'%0?(\d+)d',
+                                lambda m: f"{frame_num:0{int(m.group(1))}d}",
+                                actual_input_video
+                            )
+                        elif frame_pattern.startswith('#'):
+                            # Handle ####, ###, etc. - replace # pattern with formatted number
+                            frame_path = re.sub(
+                                r'#+',
+                                lambda m: f"{frame_num:0{len(m.group(0))}d}",
+                                actual_input_video
+                            )
+                        else:
+                            # Handle %d (no padding)
+                            frame_path = actual_input_video.replace(frame_pattern, str(frame_num))
+                    else:
+                        # Fallback: try common patterns with regex for better handling
+                        frame_path = re.sub(r'%0?(\d+)d', lambda m: f"{frame_num:0{int(m.group(1))}d}", actual_input_video)
+                        frame_path = re.sub(r'#+', lambda m: f"{frame_num:0{len(m.group(0))}d}", frame_path)
+                        frame_path = frame_path.replace("%d", str(frame_num))
                     
                     print(f"[DEBUG] Trying frame path: {frame_path}")
                     
@@ -539,10 +591,65 @@ class OriginalVideoDepthEngine:
             else:
                 # Fallback for image sequences
                 import cv2
+                import re
                 frames = []
+                
+                # Detect frame number pattern and padding from input path
+                # Patterns: %05d, %04d, %03d, %02d, %d, ####, ###, ##, #
+                # Supports both underscore and dot separators: base_name_%04d.jpg or base_name.%04d.jpg
+                frame_pattern = None
+                frame_padding = 4  # default
+                
+                # Try to detect pattern from input path
+                pattern_match = re.search(r'%0?(\d+)d', input_video)
+                if pattern_match:
+                    frame_padding = int(pattern_match.group(1))
+                    frame_pattern = f"%0{frame_padding}d"
+                elif '####' in input_video:
+                    frame_padding = 4
+                    frame_pattern = '####'
+                elif '###' in input_video:
+                    frame_padding = 3
+                    frame_pattern = '###'
+                elif '##' in input_video:
+                    frame_padding = 2
+                    frame_pattern = '##'
+                elif '#' in input_video:
+                    frame_padding = 1
+                    frame_pattern = '#'
+                elif '%d' in input_video:
+                    frame_padding = 0  # No padding
+                    frame_pattern = '%d'
+                
+                print(f"[DEBUG] Detected frame pattern: {frame_pattern}, padding: {frame_padding}")
+                
                 for frame_num in range(first_frame, last_frame + 1):
-                    frame_path = input_video.replace("%04d", f"{frame_num:04d}")
-                    frame_path = frame_path.replace("####", f"{frame_num:04d}")
+                    # Replace frame number pattern with properly formatted frame number
+                    # Use regex to handle replacement more precisely (handles both _ and . separators)
+                    if frame_pattern:
+                        if frame_pattern.startswith('%'):
+                            # Handle %05d, %04d, etc. - use regex to replace only the pattern, preserving separator
+                            # Pattern matches: base_name_%04d.jpg or base_name.%04d.jpg
+                            frame_path = re.sub(
+                                r'%0?(\d+)d',
+                                lambda m: f"{frame_num:0{int(m.group(1))}d}",
+                                input_video
+                            )
+                        elif frame_pattern.startswith('#'):
+                            # Handle ####, ###, etc. - replace # pattern with formatted number
+                            frame_path = re.sub(
+                                r'#+',
+                                lambda m: f"{frame_num:0{len(m.group(0))}d}",
+                                input_video
+                            )
+                        else:
+                            # Handle %d (no padding)
+                            frame_path = input_video.replace(frame_pattern, str(frame_num))
+                    else:
+                        # Fallback: try common patterns with regex for better handling
+                        frame_path = re.sub(r'%0?(\d+)d', lambda m: f"{frame_num:0{int(m.group(1))}d}", input_video)
+                        frame_path = re.sub(r'#+', lambda m: f"{frame_num:0{len(m.group(0))}d}", frame_path)
+                        frame_path = frame_path.replace("%d", str(frame_num))
                     
                     if os.path.exists(frame_path):
                         img = cv2.imread(frame_path)
@@ -550,6 +657,8 @@ class OriginalVideoDepthEngine:
                             img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
                             frames.append(img)
                             print(f"Loaded frame {frame_num}")
+                    else:
+                        print(f"[WARNING] Frame not found: {frame_path}")
                 
                 frames = np.array(frames)
                 target_fps = 24.0
