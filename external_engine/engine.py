@@ -65,6 +65,73 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
+# UHD maximum dimensions
+UHD_MAX_WIDTH = 4096
+UHD_MAX_HEIGHT = 2160
+
+def resize_frames_to_uhd_max(frames):
+    """
+    Check and resize frames to UHD max size (4096x2160) if they exceed it.
+    Maintains aspect ratio.
+    
+    Args:
+        frames: numpy array of frames with shape (N, H, W, C)
+    
+    Returns:
+        resized_frames: numpy array of resized frames
+        was_resized: boolean indicating if resize was performed
+        original_size: tuple of (original_width, original_height)
+        new_size: tuple of (new_width, new_height)
+    """
+    if len(frames) == 0:
+        return frames, False, None, None
+    
+    # Get dimensions from first frame
+    original_height, original_width = frames[0].shape[:2]
+    original_size = (original_width, original_height)
+    
+    # Check if resize is needed
+    needs_resize = original_width > UHD_MAX_WIDTH or original_height > UHD_MAX_HEIGHT
+    
+    if not needs_resize:
+        return frames, False, original_size, original_size
+    
+    # Calculate scale to fit within UHD max while maintaining aspect ratio
+    scale_w = UHD_MAX_WIDTH / original_width
+    scale_h = UHD_MAX_HEIGHT / original_height
+    scale = min(scale_w, scale_h)  # Use smaller scale to ensure both dimensions fit
+    
+    new_width = int(round(original_width * scale))
+    new_height = int(round(original_height * scale))
+    
+    # Ensure dimensions are even (required for some video codecs)
+    new_width = new_width if new_width % 2 == 0 else new_width + 1
+    new_height = new_height if new_height % 2 == 0 else new_height + 1
+    
+    # Clamp to UHD max
+    new_width = min(new_width, UHD_MAX_WIDTH)
+    new_height = min(new_height, UHD_MAX_HEIGHT)
+    
+    new_size = (new_width, new_height)
+    
+    print(f"[RESIZE] Input size {original_width}x{original_height} exceeds UHD max ({UHD_MAX_WIDTH}x{UHD_MAX_HEIGHT})")
+    print(f"[RESIZE] Resizing to {new_width}x{new_height} (scale: {scale:.4f})")
+    logger.info(f"Resizing frames from {original_width}x{original_height} to {new_width}x{new_height}")
+    
+    # Resize all frames
+    import cv2
+    resized_frames = []
+    for i, frame in enumerate(frames):
+        resized_frame = cv2.resize(frame, (new_width, new_height), interpolation=cv2.INTER_CUBIC)
+        resized_frames.append(resized_frame)
+        if i < 3 or i % 50 == 0:
+            print(f"[RESIZE] Resized frame {i+1}/{len(frames)}")
+    
+    resized_frames = np.array(resized_frames)
+    print(f"[RESIZE] ✅ Resize completed: {len(resized_frames)} frames at {new_width}x{new_height}")
+    
+    return resized_frames, True, original_size, new_size
+
 class OriginalVideoDepthEngine:
     def __init__(self, model_path=None):
         print(f"[DEBUG] Initializing OriginalVideoDepthEngine...")
@@ -297,6 +364,14 @@ class OriginalVideoDepthEngine:
                 return {"status": "error", "message": "No frames loaded"}
             
             logger.info(f"Loaded {len(frames)} frames at original resolution")
+            
+            # Check and resize to UHD max (4096x2160) if needed
+            frames, was_resized, original_size, processed_size = resize_frames_to_uhd_max(frames)
+            if was_resized:
+                logger.info(f"Frames resized from {original_size[0]}x{original_size[1]} to {processed_size[0]}x{processed_size[1]}")
+                print(f"[INFO] ✅ Input resized to UHD max: {processed_size[0]}x{processed_size[1]}")
+            else:
+                print(f"[INFO] ✅ Input size within UHD limits: {frames[0].shape[1]}x{frames[0].shape[0]}")
             
             # Process using ORIGINAL Video-Depth-Anything method
             print(f"[PROCESSING] Using ORIGINAL Video-Depth-Anything method...")
@@ -667,6 +742,14 @@ class OriginalVideoDepthEngine:
                 return {"status": "error", "message": "No frames loaded"}
             
             logger.info(f"Loaded {len(frames)} frames at original resolution")
+            
+            # Check and resize to UHD max (4096x2160) if needed
+            frames, was_resized, original_size, processed_size = resize_frames_to_uhd_max(frames)
+            if was_resized:
+                logger.info(f"Frames resized from {original_size[0]}x{original_size[1]} to {processed_size[0]}x{processed_size[1]}")
+                print(f"[INFO] ✅ Input resized to UHD max: {processed_size[0]}x{processed_size[1]}")
+            else:
+                print(f"[INFO] ✅ Input size within UHD limits: {frames[0].shape[1]}x{frames[0].shape[0]}")
             
             # Update progress
             if progress_task:
